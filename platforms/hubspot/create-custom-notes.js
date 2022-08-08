@@ -17,7 +17,7 @@ exports.main = async (event, callback) => {
     hubspotClient.crm.objects.basicApi.create('notes', properties).then((results) => {
         let note = results.body;
 
-        hubspotClient.crm.objects.associationsApi.create('note', note.id, 'deal', deal_id, 'note_to_deal').then((results2) => {
+        hubspotClient.crm.objects.associationsApi.create('note', note.id, 'deal', deal_id, 'note_to_deal').then(() => {
             codeResult = true;
         }).catch((err2) => {
             console.log(err2);
