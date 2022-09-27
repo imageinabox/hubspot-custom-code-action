@@ -1,5 +1,3 @@
-const hubspot = require('@hubspot/api-client');
-
 exports.main = async (event, callback) => {
 
 	//Take the input field.
