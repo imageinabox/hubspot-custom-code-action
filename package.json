@@ -11,7 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "@hubspot/api-client": ">=3.4.1",
-    "axios": "^0.21.2",
-    "lodash": "^4.17.21"
+    "axios": ">=0.21.2",
+    "lodash": ">=4.17.21"
   }
 }
