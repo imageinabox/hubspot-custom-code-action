@@ -20,6 +20,7 @@ We write lots of custom coded actions for HubSpot clients. These only work if yo
 
 Here are some related projects from other awesome HubSpot Experts!
 
+* [HubSpot Sample Custom Code Actions](https://github.com/HubSpot/sample-workflow-custom-code)
 * [Teun Rutten](https://github.com/teunrutten/coded-actions)
 * [Antoinebr](https://github.com/Antoinebr/HubSpot-Operations-Hub-Custom-Coded-Action)
 * [Amine Ben Cheikh Brahim](https://github.com/AmineBENCHEIKHBRAHIM/CustomCodedActions-HubSpot)
