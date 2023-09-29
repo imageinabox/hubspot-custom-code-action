@@ -13,6 +13,7 @@ We write lots of custom coded actions for HubSpot clients. These only work if yo
 ## Authors of this REPO
 
 - [@justingivens](https://github.com/justingivens)
+- [Image in a Box](https://www.imageinabox.com/)
 
 
 ## Related Custom Coded Actions REPOs
