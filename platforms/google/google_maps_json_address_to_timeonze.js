@@ -1,3 +1,12 @@
+/*******************************************
+ * Takes a City, State and County from the input
+ * and looks up the TIMEZONE of that location to
+ * store within a contacts custom property.
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
+
 const axios = require('axios');
 
 exports.main = async (event, callback) => {

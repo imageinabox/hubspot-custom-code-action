@@ -1,3 +1,11 @@
+/*******************************************
+ * Compares 6 input fields of scores and
+ * returns the HIGHEST score.
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
+
 const hubspot = require('@hubspot/api-client');
 
 exports.main = async (event, callback) => {

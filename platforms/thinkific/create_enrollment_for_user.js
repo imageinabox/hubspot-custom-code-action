@@ -1,4 +1,9 @@
-// Import Axios library for easier HTTP request making
+/*******************************************
+ * Auto enrolls a user into a Thinkific Course
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
 const axios = require('axios');
 
 //Needs to CHANGE per Workflow

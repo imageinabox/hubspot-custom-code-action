@@ -10,7 +10,8 @@
   "author": "Image in a Box",
   "license": "MIT",
   "dependencies": {
-    "@hubspot/api-client": "^3.4.1",
-    "axios": "^0.20.0"
+    "@hubspot/api-client": ">=3.4.1",
+    "axios": "^0.20.0",
+    "lodash": "^4.17.20"
   }
 }

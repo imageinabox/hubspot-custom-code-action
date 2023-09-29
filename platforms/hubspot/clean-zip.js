@@ -1,3 +1,11 @@
+/*******************************************
+ * Trims whitespace and only keeps 5 digits
+ * in the zip field.
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
+
 exports.main = async (event, callback) => {
 
 	//Take the input field.

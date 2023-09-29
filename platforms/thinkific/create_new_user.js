@@ -1,3 +1,11 @@
+/*******************************************
+ * Creates a new User within the Thinkific Platform
+ * Stores the new ID into the a custom property
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
+
 const hubspot = require('@hubspot/api-client');
 // Import Axios library for easier HTTP request making
 const axios = require('axios');

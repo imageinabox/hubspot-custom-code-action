@@ -1,26 +1,43 @@
 /*******************************************
- * This create a NOTE Activity on the contact record.
- * Useful when you need to log activity from another system.
+ * This create a SMS Logged Activity on the contact record.
+ * Useful when you manually sending SMS messages through an API
+ * or something other system.
  *
  * License: GNU GPLv3
  * Copyright: 2023 Image in a Box, LLC
  ********************************************/
+
 const hubspot = require('@hubspot/api-client');
 
 exports.main = async (event, callback) => {
-    const deal_id = event.inputFields['deal_id'];
+    const message = event.inputFields['message'];
+    const contact_id = event.inputFields['recordID'];
 
     const hubspotClient = new hubspot.Client({accessToken: process.env.appToken});
     const now = new Date();
-    let codeResult = false;
 
-    const properties = {
+    const data = {
         properties: {
+            hs_communication_channel_type: "SMS",
+            hs_communication_logged_from: "CRM",
             hs_timestamp: now.toISOString(),
-            hs_note_body: "<strong>Production Note:</strong><br/>" + event.inputFields['note']
-        }
+            hs_communication_body: "<strong>SMS Message:</strong><br/>" + message
+        },
+        associations: [
+            {
+                to: {
+                    id: contact_id
+                },
+                types: [{
+                    associationCategory: "HUBSPOT_DEFINED",
+                    associationTypeId: 81
+                }]
+            },
+            {}
+        ]
     };
 
+    hubspotClient.crm.
     hubspotClient.crm.objects.basicApi.create('notes', properties).then((results) => {
         let note = results.body;
 

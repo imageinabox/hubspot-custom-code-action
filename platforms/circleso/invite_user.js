@@ -1,6 +1,19 @@
+/*******************************************
+ * Automatically adds a new user to a CIRCLE.so
+ * Account
+ *
+ * License: GNU GPLv3
+ * Copyright: 2023 Image in a Box, LLC
+ ********************************************/
+
 const hubspot = require('@hubspot/api-client');
 // Import Axios library for easier HTTP request making
 const axios = require('axios');
+
+//SETUP! Needs to change per account.
+const community_id = 0;
+const space_ids = [0, 0];
+const space_group_ids = [ 0 ];
 
 exports.main = (event, callback) => {
 	// Instantiate HubSpot Client that will be used to interface with Source Portal (Portal A)
@@ -22,7 +35,8 @@ exports.main = (event, callback) => {
 			let url_parameters = '?';
 			url_parameters += 'email=' + email;
 			url_parameters += '&name=' + firstname + " " + lastname;
-			url_parameters += '&community_id=12173&space_ids%5B%5D=88178&space_ids%5B%5D=93941&space_group_ids%5B%5D=28149'
+			url_parameters += '&community_id='+community_id+'&space_ids[]='+space_ids.join('&space_ids[]=') + '&space_group_ids[]='+space_group_ids.join('&space_group_ids[]=');
+			url_parameters = encodeURI(url_parameters);
 
 			let config = {
 				headers: {
@@ -46,6 +60,10 @@ exports.main = (event, callback) => {
 							circleSoID: userID
 						}
 					})
+				})
+				.catch(err=>{
+					console.log(err);
+					throw err;
 				});
 		});
 }
