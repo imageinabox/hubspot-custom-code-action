@@ -28,6 +28,10 @@ Here are some related projects from other awesome HubSpot Experts!
 * [Auxilio](https://github.com/Auxilio-io/hubspot-custom-code-action)
 * [Elliott](https://github.com/elliott30/hubspot-custom-code-action-workspace)
 
+## Other useful REPOs
+* [UI-Extension Examples](https://github.com/HubSpot/ui-extensions-examples)
+* [CMS JS Building Block](https://github.com/HubSpot/CMS-JS-building-block-examples)
+
 ## Support
 
 HubSpot Slack Developer community or the [HubSpot Community](https://community.hubspot.com/).
