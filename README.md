@@ -27,6 +27,8 @@ Here are some related projects from other awesome HubSpot Experts!
 * [Diego Pinzon](https://github.com/champetoso/hs_custom_code_examples)
 * [Auxilio](https://github.com/Auxilio-io/hubspot-custom-code-action)
 * [Elliott](https://github.com/elliott30/hubspot-custom-code-action-workspace)
+* [Michelle Tabor](https://github.com/bortami/Custom-Coded-Workflows)
+* [Liam Redding](https://github.com/LiamRedding/HubSpotCode/tree/main)
 
 ## Other useful REPOs
 * [UI-Extension Examples](https://github.com/HubSpot/ui-extensions-examples)
